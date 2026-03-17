@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Padrão mobile */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Para telas maiores de 1200px */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 120px;
+    }
+}
