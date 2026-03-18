@@ -1,0 +1,12 @@
+app-navbar {
+    grid-column: span 4;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: violet;
+}
+
+main {
+    grid-column: span 8;
+    background-color: purple;
+}
