@@ -8,7 +8,7 @@
 .navbar-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 1rem;
 }
 
@@ -19,12 +19,13 @@
 .text-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
 }
 
 .link-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #subtitle {
@@ -45,4 +46,17 @@
     font-size: 16px;
     color: #E6E1FF;
     width: 382px;
+}
+
+.navbar-link {
+    font-family: 'Inter Font';
+    font-weight: 400;
+    font-size: 22.5px;
+    color: #F5F3E7;
+    text-decoration: none;
+}
+
+#bullet-point {
+    color: #C9A227;
+    margin-right: 10px;
 }

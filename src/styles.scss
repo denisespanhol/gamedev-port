@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --grid-margin-bigscreen: 120px;
+    --grid-margin-mobile: 24px;
+    --grid-gutter: 24px;
+}
+
 @font-face {
     font-family: 'Title Font';
     src: url('assets/fonts/Cinzel/cinzel.regular.ttf') format('truetype');
@@ -16,14 +22,18 @@
 
 /* Padrão mobile */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+  width: 100%;
 }
 
 .layout {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 0 var(--grid-margin-mobile);
+    gap: var(--grid-gutter);
+}
+
+.layout > * {
+  
 }
 
 .font-title {
@@ -41,7 +51,7 @@ body {
 
 /* Para telas maiores de 1200px */
 @media (min-width: 1200px) {
-    .container {
-        padding: 0 120px;
-    }
+    .layout {
+        padding: 0 var(--grid-margin-bigscreen);
+  }
 }
