@@ -21,11 +21,44 @@
     margin-top: 40px;
 }
 
+.games-view a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.games-view a:hover .title-game {
+  color: #A78BFA;
+}
+
+.games-view a:hover .game-image {
+  transform: scale(1.02);
+  filter: brightness(1.1) saturate(1.2) hue-rotate(10deg);
+  transition: 0.3s;
+}
+
 .game-card { 
     display: flex;
     flex-direction: column;
     width: 283px;
     height: 229px;
+    position: relative;
+}
+
+.game-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(167, 139, 250, 0.2);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+.game-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game-image {
@@ -44,7 +77,6 @@
 .title-game { 
     font-family: 'Inter Font';
     font-size: 1rem;
-    align-self: center;
     color: #F5F3E7;
     margin-bottom: 0;
 }
@@ -52,7 +84,7 @@
 .function-game { 
     font-family: 'Inter Font';
     font-size: 0.75rem;
-    align-self: center;
+    display: flex;
     color: #B7B2D9;
     margin: 5px 0 0 0;
  }
