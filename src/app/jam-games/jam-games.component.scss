@@ -1,0 +1,59 @@
+.jam-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 230px;
+}
+
+.main-title {
+    font-family: 'Title Font';
+    color: #C9A227;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 1.875rem;
+    margin: 0;
+}
+
+.games-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.game-card { 
+    display: flex;
+    flex-direction: column;
+    width: 283px;
+    height: 229px;
+}
+
+.game-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 
+    inset 0 0 0 1px #C9A227,
+    0 0 15px rgba(167, 139, 250, 0.3);
+ }
+
+ .separator-color {
+    color: #C9A227;
+}
+
+.title-game { 
+    font-family: 'Inter Font';
+    font-size: 1rem;
+    align-self: center;
+    color: #F5F3E7;
+    margin-bottom: 0;
+}
+
+.function-game { 
+    font-family: 'Inter Font';
+    font-size: 0.75rem;
+    align-self: center;
+    color: #B7B2D9;
+    margin: 5px 0 0 0;
+ }
