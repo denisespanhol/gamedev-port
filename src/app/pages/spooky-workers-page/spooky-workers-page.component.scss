@@ -23,3 +23,82 @@
     inset 0 0 0 1px #C9A227,
     0 0 15px rgba(167, 139, 250, 0.3);
 }
+
+.gamejob-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.title-game {
+    font-family: 'Title Font', sans-serif;
+    color: #C9A227;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 0;
+    align-self: center;
+}
+
+.text-roles {
+    font-family: 'Inter Font', sans-serif;
+    font-size: 1rem;
+    color: #E6E1FF;
+    margin: 0;
+    align-self: center;
+}
+
+.text-description {
+    font-family: 'Inter Font', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #F5F3E7;
+    margin-top: 50px;
+}
+
+.bullet-point-text {
+    font-family: 'Inter Font', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #F5F3E7;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.bullet-point-text span {
+    color: #C9A227;
+}
+
+.game-link {
+    font-family: 'Inter Font', sans-serif;
+    font-size: 1.2rem;
+    color: #C9A227;
+    text-decoration: none;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.images-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.gif-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spooky-workers-gif {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 
+    inset 0 0 0 1px #C9A227,
+    0 0 15px rgba(167, 139, 250, 0.3);
+}
