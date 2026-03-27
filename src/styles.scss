@@ -2,7 +2,7 @@
 
 :root {
     --grid-margin-bigscreen: 120px;
-    --grid-margin-mobile: 24px;
+    --grid-margin-mobile: 23px;
     --grid-gutter: 24px;
 }
 
@@ -31,13 +31,9 @@ svg {
 }
 
 .layout {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 0 var(--grid-margin-bigscreen);
-}
-
-.layout > * {
-   /* outline: red solid 1px; /* Apenas para visualização dos elementos */
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--grid-margin-mobile);
 }
 
 body {
@@ -54,6 +50,7 @@ html {
 /* Para telas maiores de 1200px */
 @media (min-width: 1200px) {
     .layout {
+        display: grid;
         padding: 0 var(--grid-margin-bigscreen);
   }
 }
