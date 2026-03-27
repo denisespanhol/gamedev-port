@@ -9,13 +9,20 @@
 
     <div class="text-container">
         <h1 class="font-title">Denis Espanhol</h1>
-        <p id="subtitle">Narrative Designer <span class="separator-color">|</span> Game Writer <span class="separator-color">|</span> Game Programmer</p>
+        <p id="subtitle">Narrative Designer <span class="separator-color">|</span> Game Designer <span class="separator-color">|</span> Game Programmer</p>
         <p class="text-resume">Crio experiências através das palavras e personagens que nascem da minha imaginação.</p>
     </div>
     <div class="link-container">
         <a href="#" class="navbar-link"><span id="bullet-point">•</span> Sobre mim</a>
         <a [routerLink]="['/']" [fragment]="'pro-games'" class="navbar-link"><span id="bullet-point">•</span> Jogos Profissionais</a>
         <a [routerLink]="['/']" [fragment]="'jam-games'" class="navbar-link"><span id="bullet-point">•</span> Jogos de Game Jam</a>
+    </div>
+    <div class="link-container-mobile">
+        <a href="#" class="navbar-link">Sobre mim</a>
+        <span id="bullet-point">_____________________________</span>
+        <a [routerLink]="['/']" [fragment]="'pro-games'" class="navbar-link">Jogos Profissionais</a>
+        <span id="bullet-point">_____________________________</span>
+        <a [routerLink]="['/']" [fragment]="'jam-games'" class="navbar-link">Jogos de Game Jam</a>
     </div>
 
     <div class="icons-container">

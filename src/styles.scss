@@ -21,8 +21,8 @@
 }
 
 svg {
-  width: 36px;
-  height: 36px;
+  width: 33px;
+  height: 33px;
 }
 
 /* Padrão mobile */
@@ -52,5 +52,10 @@ html {
     .layout {
         display: grid;
         padding: 0 var(--grid-margin-bigscreen);
-  }
+    }
+
+    svg {
+        width: 36px;
+        height: 36px;
+    }
 }
