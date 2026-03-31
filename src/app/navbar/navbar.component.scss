@@ -87,7 +87,6 @@
     display: flex;
     align-self: center;
     gap: 10px;
-    margin-top: 50px;
 }
 
 .icons-svg {
@@ -106,6 +105,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        height: 100%;
     }
 
     .profile-picture {
@@ -137,7 +137,7 @@
 
     #subtitle {
         font-family: 'Inter Font';
-        font-size: 0.788rem;
+        font-size: 0.738rem;
         color: #F5F3E7;
         margin-top: 3px;
         letter-spacing: 0.2px;
@@ -149,7 +149,7 @@
         font-weight: 400;
         font-size: 0.875rem;
         color: #E6E1FF;
-        width: 350px;
+        width: 330px;
     }
 
     .navbar-link {
@@ -160,5 +160,79 @@
         text-decoration: none;
         margin-bottom: 20px;
         white-space: nowrap;
+    }
+
+    .icons-container {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 15%;
+        align-self: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 100%;
+    }
+
+    .link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .link-container-mobile {
+        display: none;
+    }
+
+    .font-title {
+        font-family: 'Title Font';
+        color: #A78BFA;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    #subtitle {
+        font-family: 'Inter Font';
+        font-size: 0.74rem;
+        color: #F5F3E7;
+        margin-top: 3px;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+    }
+
+    .text-resume {
+        font-family: 'Inter Font';
+        font-weight: 400;
+        font-size: 1rem;
+        color: #E6E1FF;
+        width: 330px;
+    }
+
+    .navbar-link {
+        font-family: 'Inter Font';
+        font-weight: 400;
+        font-size: 1rem;
+        color: #F5F3E7;
+        text-decoration: none;
+        margin-bottom: 20px;
+        white-space: nowrap;
+    }
+
+    .icons-container {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 15%;
+        align-self: center;
+        gap: 10px;
     }
 }

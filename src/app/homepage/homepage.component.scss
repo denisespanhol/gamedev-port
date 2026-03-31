@@ -17,8 +17,7 @@
 /* DESKTOP */
 @media (min-width: 1200px) {
     .about-container {
-        margin-top: 30%;
-        margin-left: 230px;
+        margin: 30% 0 0 29%;
     }
 
     .about-paragraph {
@@ -26,5 +25,11 @@
         font-size: 1.25rem;
         line-height: 1.5;
         color: #F5F3E7;
+    }
+}
+
+@media (min-width: 1800px) {
+    .about-container {
+        margin: 280px 250px 0 500px;
     }
 }

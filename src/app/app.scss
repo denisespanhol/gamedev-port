@@ -22,3 +22,10 @@ app-navbar {
     }
 }
 
+@media (min-width: 1800px) {
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+

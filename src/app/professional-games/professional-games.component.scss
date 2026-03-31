@@ -91,7 +91,7 @@
     margin: 5px 0 0 0;
  }
 
- @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .professional-container {
         display: flex;
         flex-direction: column;
@@ -107,4 +107,44 @@
         font-size: 1.875rem;
         margin: 0;
     }
- }
+
+    .games-view {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .games-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 60px
+    }
+
+    .game-card { 
+        width: 33rem;
+        height: 14.313rem;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .title-game { 
+        font-family: 'Inter Font';
+        font-size: 1.3rem;
+        color: #F5F3E7;
+        margin-bottom: 0;
+    }
+
+    .function-game { 
+        font-family: 'Inter Font';
+        font-size: 1rem;
+        display: flex;
+        color: #B7B2D9;
+        margin: 5px 0 0 0;
+    }
+}
