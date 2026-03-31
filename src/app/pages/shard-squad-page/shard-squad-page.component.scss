@@ -35,14 +35,14 @@
     color: #C9A227;
     letter-spacing: 0.5px;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     align-self: center;
 }
 
 .text-roles {
     font-family: 'Inter Font', sans-serif;
-    font-size: 1rem;
+    font-size: 0.82rem;
     color: #E6E1FF;
     margin: 0;
     align-self: center;
@@ -97,12 +97,23 @@
         margin-top: 10%;
         margin-left: 230px;
     }
+    
+    .title-game {
+        font-family: 'Title Font', sans-serif;
+        color: #C9A227;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        margin: 0;
+        align-self: center;
+    }
 
-    .gamejob-description-container {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        margin-top: 10px;
+    .text-roles {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1rem;
+        color: #E6E1FF;
+        margin: 0;
+        align-self: center;
     }
 
     .text-description {

@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
-    margin-left: 230px;
+    margin: 10% 8% 0 8%;
 }
 
 .cover-image-container {
@@ -36,14 +35,14 @@
     color: #C9A227;
     letter-spacing: 0.5px;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     align-self: center;
 }
 
 .text-roles {
     font-family: 'Inter Font', sans-serif;
-    font-size: 1rem;
+    font-size: 0.82rem;
     color: #E6E1FF;
     margin: 0;
     align-self: center;
@@ -51,7 +50,7 @@
 
 .text-description {
     font-family: 'Inter Font', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.025rem;
     line-height: 1.4;
     color: #F5F3E7;
     margin-top: 50px;
@@ -59,7 +58,7 @@
 
 .bullet-point-text {
     font-family: 'Inter Font', sans-serif;
-    font-size: 1rem;
+    font-size: 0.85rem;
     line-height: 1.5;
     color: #F5F3E7;
     margin-top: 10px;
@@ -101,4 +100,50 @@
     box-shadow: 
     inset 0 0 0 1px #C9A227,
     0 0 15px rgba(167, 139, 250, 0.3);
+}
+
+@media (min-width: 1200px) {
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        margin-left: 230px;
+    }
+
+    .title-game {
+        font-family: 'Title Font', sans-serif;
+        color: #C9A227;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        font-size: 2.5rem;
+        margin: 0;
+        align-self: center;
+    }
+
+    .text-roles {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1rem;
+        color: #E6E1FF;
+        margin: 0;
+        align-self: center;
+    }
+
+    .text-description {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        color: #F5F3E7;
+        margin-top: 50px;
+    }
+
+    .bullet-point-text {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #F5F3E7;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
 }
