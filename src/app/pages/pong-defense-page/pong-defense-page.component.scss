@@ -147,3 +147,75 @@
         margin-bottom: 0;
     }
 }
+
+@media (min-width: 1800px) {
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 150px 250px 0 500px;
+    }
+
+    .cover-image-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-game {
+        font-family: 'Title Font', sans-serif;
+        color: #C9A227;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        font-size: 3rem;
+        margin: 20px 0 0 0;
+        align-self: center;
+    }
+
+    .text-roles {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1.3rem;
+        color: #E6E1FF;
+        margin: 0;
+        align-self: center;
+    }
+
+    .text-description {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        color: #F5F3E7;
+        margin-top: 50px;
+    }
+
+    .bullet-point-text {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: #F5F3E7;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .images-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .game-link {
+        font-family: 'Inter Font', sans-serif;
+        font-size: 1.6rem;
+        color: #C9A227;
+        text-decoration: none;
+        margin-top: 60px;
+        align-self: center;
+    }
+}
