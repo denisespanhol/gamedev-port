@@ -126,7 +126,9 @@
 @media (min-width: 1800px) {
     .games-view {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 60px;
     }
 
     .game-card { 
