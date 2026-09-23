@@ -1,0 +1,154 @@
+.professional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.125rem;
+}
+
+.main-title {
+    font-family: 'Title Font';
+    color: #C9A227;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.games-view {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.games-view a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.games-view a:hover .title-game {
+  color: #A78BFA;
+}
+
+.games-view a:hover .game-image {
+  transform: scale(1.02);
+  filter: brightness(1.1) saturate(1.2) hue-rotate(10deg);
+  transition: 0.3s;
+}
+
+.game-card { 
+    display: flex;
+    flex-direction: column;
+    width: 17.688rem;
+    height: 14.313rem;
+    position: relative;
+}
+
+.game-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-image {
+    width: 100%;
+    height: 11.25rem;
+    object-fit: cover;
+    box-shadow: 
+    inset 0 0 0 1px #C9A227,
+    0 0 15px rgba(167, 139, 250, 0.3);
+    transition: 0.3s;
+ }
+
+.game-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(167, 139, 250, 0.2);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+.separator-color {
+    color: #C9A227;
+}
+
+.title-game { 
+    font-family: 'Inter Font';
+    font-size: 1rem;
+    color: #F5F3E7;
+    margin-bottom: 0;
+}
+
+.function-game { 
+    font-family: 'Inter Font';
+    font-size: 0.75rem;
+    display: flex;
+    color: #B7B2D9;
+    margin: 5px 0 0 0;
+ }
+
+@media (min-width: 1200px) {
+    .professional-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        margin-left: 230px;
+    }
+
+    .main-title {
+        font-family: 'Title Font';
+        color: #C9A227;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        font-size: 1.875rem;
+        margin: 0;
+    }
+
+    .games-view {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .game-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .games-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 60px
+    }
+
+    .game-card { 
+        width: 33rem;
+        height: 14.313rem;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .title-game { 
+        font-family: 'Inter Font';
+        font-size: 1.3rem;
+        color: #F5F3E7;
+        margin-bottom: 0;
+    }
+
+    .function-game { 
+        font-family: 'Inter Font';
+        font-size: 1rem;
+        display: flex;
+        color: #B7B2D9;
+        margin: 5px 0 0 0;
+    }
+}

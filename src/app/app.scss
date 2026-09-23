@@ -1,0 +1,31 @@
+app-navbar {
+    width: 100%;
+    position: relative;
+}
+
+
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    app-navbar {
+        position: fixed;
+        top: 0;
+        left: var(--grid-margin-bigscreen);
+
+        width: calc((100vw - (var(--grid-margin-bigscreen) * 2)) * 3 / 12);
+        height: 100dvh;
+    }
+
+    main {
+        grid-column: span 8;
+        margin-left: calc((100vw - (var(--grid-margin-bigscreen) * 2)) * 4 / 12);
+    }
+}
+
+@media (min-width: 1800px) {
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
