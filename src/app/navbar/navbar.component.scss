@@ -100,6 +100,45 @@
   transform: scale(1.1);
 }
 
+.language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    align-self: center;
+    margin-top: 20px;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid #A78BFA;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Inter Font';
+}
+
+.language-toggle:hover {
+    border-color: #C9A227;
+    transform: scale(1.05);
+}
+
+.language-toggle__option {
+    font-family: 'Inter Font';
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #B7B2D9;
+    transition: 0.3s;
+}
+
+.language-toggle__option--active {
+    color: #C9A227;
+    font-weight: 600;
+}
+
+.language-toggle__divider {
+    color: #A78BFA;
+    font-size: 0.75rem;
+}
+
 /* DESKTOP */
 @media (min-width: 1200px) {
     .navbar-container {
@@ -166,9 +205,13 @@
     .icons-container {
         display: flex;
         margin-top: auto;
-        margin-bottom: 15%;
         align-self: center;
         gap: 10px;
+    }
+
+    .language-toggle {
+        margin-top: 12px;
+        margin-bottom: 15%;
     }
 }
 
@@ -232,8 +275,12 @@
     .icons-container {
         display: flex;
         margin-top: auto;
-        margin-bottom: 15%;
         align-self: center;
         gap: 10px;
+    }
+
+    .language-toggle {
+        margin-top: 12px;
+        margin-bottom: 15%;
     }
 }

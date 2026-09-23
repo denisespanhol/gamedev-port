@@ -10,19 +10,19 @@
     <div class="text-container">
         <h1 class="font-title">Denis Espanhol</h1>
         <p id="subtitle">Narrative Designer <span class="separator-color">|</span> Game Designer <span class="separator-color">|</span> Game Programmer</p>
-        <p class="text-resume">Crio experiências através das palavras e personagens que nascem da minha imaginação.</p>
+        <p class="text-resume">{{ texts().resume }}</p>
     </div>
     <div class="link-container">
-        <a href="#" class="navbar-link"><span id="bullet-point">•</span> Sobre mim</a>
-        <a [routerLink]="['/']" [fragment]="'pro-games'" class="navbar-link"><span id="bullet-point">•</span> Jogos Profissionais</a>
-        <a [routerLink]="['/']" [fragment]="'jam-games'" class="navbar-link"><span id="bullet-point">•</span> Jogos de Game Jam</a>
+        <a href="#" class="navbar-link"><span id="bullet-point">•</span> {{ texts().aboutMe }}</a>
+        <a [routerLink]="['/']" [fragment]="'pro-games'" class="navbar-link"><span id="bullet-point">•</span> {{ texts().proGames }}</a>
+        <a [routerLink]="['/']" [fragment]="'jam-games'" class="navbar-link"><span id="bullet-point">•</span> {{ texts().jamGames }}</a>
     </div>
     <div class="link-container-mobile">
-        <a href="#" class="navbar-link">Sobre mim</a>
+        <a href="#" class="navbar-link">{{ texts().aboutMe }}</a>
         <span id="bullet-point">_____________________________</span>
-        <a [routerLink]="['/']" [fragment]="'pro-games'" class="navbar-link">Jogos Profissionais</a>
+        <a [routerLink]="['/']" [fragment]="'pro-games'" class="navbar-link">{{ texts().proGames }}</a>
         <span id="bullet-point">_____________________________</span>
-        <a [routerLink]="['/']" [fragment]="'jam-games'" class="navbar-link">Jogos de Game Jam</a>
+        <a [routerLink]="['/']" [fragment]="'jam-games'" class="navbar-link">{{ texts().jamGames }}</a>
     </div>
 
     <div class="icons-container">
@@ -52,4 +52,14 @@
             </svg>
         </a>
     </div>
+
+    <button
+        type="button"
+        class="language-toggle"
+        (click)="languageService.toggleLanguage()"
+        [attr.aria-label]="languageService.language() === 'pt' ? 'Switch to English' : 'Mudar para Português'">
+        <span [class.language-toggle__option--active]="languageService.language() === 'pt'" class="language-toggle__option">PT</span>
+        <span class="language-toggle__divider">|</span>
+        <span [class.language-toggle__option--active]="languageService.language() === 'en'" class="language-toggle__option">EN</span>
+    </button>
 </div>
