@@ -87,6 +87,39 @@
     height: 100%;
 }
 
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 0.65rem 1.5rem;
+    border: 1px solid #C9A227;
+    border-radius: 999px;
+    font-family: 'Inter Font', sans-serif;
+    font-size: 0.9rem;
+    color: #C9A227;
+    text-decoration: none;
+    background: transparent;
+    transition: 0.3s;
+    align-self: center;
+}
+
+.back-button:hover {
+    background: rgba(167, 139, 250, 0.15);
+    color: #A78BFA;
+    border-color: #A78BFA;
+    transform: scale(1.03);
+}
+
+.back-arrow {
+    transition: transform 0.3s;
+}
+
+.back-button:hover .back-arrow {
+    transform: translateX(-3px);
+}
+
 /* DESKTOP */
 @media (min-width: 1200px) {
     .page-container {
